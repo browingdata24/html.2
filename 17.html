@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid gainsboro;
+            background-color: seashell;
+            margin: auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: plum;
+        }
+        #fruits{
+            float: right;
+            width: 48%;
+        }
+
+        #computer{
+            float: left;
+            width: 48%;
+        }
+
+        #stationary{
+            /* float: left; */
+            clear: both;
+            clear: left;
+            width: 99%;
+        }
+        p, h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum officiis quibusdam pariatur? Tempora perspiciatis aspernatur dolores repudiandae itaque magni, labore rem delectus optio, autem repellendus eaque, consequatur voluptatem corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum porro aut eos sapiente, incidunt quidem. Veritatis eligendi nisi, minima earum soluta rem dolores ducimus, ex repellat optio repellendus. Sunt enim quam dolorem ex odit. </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta suscipit optio, minima deserunt alias mollitia totam nam labore praesentium animi reiciendis doloribus asperiores! Velit minus amet et quis voluptatibus quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur quos officiis pariatur vero dolore dolorem animi quo voluptatum, magnam numquam inventore, delectus voluptas soluta eligendi, libero nihil sint cum placeat. Commodi, distinctio iusto. </p>
+        </div>
+        <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae aliquam explicabo omnis minus cum, pariatur ducimus illo, eum similique itaque iure delectus dolorum nihil. Magnam reiciendis laborum tenetur facilis labore?</p>
+    </div>
+</body>
+</html>
