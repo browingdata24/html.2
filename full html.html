@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en"> 
+        <!-- (html lang="en"    ye html opening tag hota h jo document ki langaugae batata h in english) -->
+<head>  
+        <!-- (head   ismeh all meta tag include hote h or ye meta tag define krta h content and title of website -->
+    <meta charset="UTF-8">
+        <!-- (ye declare krta h pages character encoding) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- (it used to adjust width of website) -->
+    <meta name="description" content="This is discription"> 
+        <!-- (use to add description) -->
+    <meta name="keywords" content="html, python tutorials, webb devlopment ">
+        <!-- (keywords ko content ke tag part meh add kr skte h) -->
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="hy.css">
+        <!-- (this is ki kaise ham external CSS ko include kr skte h) -->
+
+    <script src="hy.js"></script>
+        <!-- (this is ki kaise ham external javascript ko include kr skte h) -->
+</head>
+<body>
+        <!-- (body   ye contain krtaa h all content of website -->
+    <h1>Pooja</h1>
+    <h2>Pooja</h2>
+    <h3>Pooja</h3>
+    <h4>Pooja</h4>
+    <h5>Pooja</h5>
+    <h6>Pooja</h6>
+       <!-- (h1,h2,h3,h4,h5,h6  =>these are heading tags.  and   h1 is main heading of webite) --> 
+
+    <p>Lorem ipsum dolor, sit amet consectetur <strong>this is strong</strong> adipisicing elit. Laudantium eligendi quaerat nobis vitae eveniet rerum maxime voluptas <em>This is emphasis</em> enim in soluta eos nostrum expedita dolore odio quis dolorem consequuntur vero voluptatum nemo officiis, molestiae quasi! Facilis minus deserunt ab iusto quia?</p>   
+       <!-- (for this big paragraph use "Lorem40"  they gives u 40 word long paragraph as mentioned above.)  -->
+    <p>first <br> this is a new line
+    </p>
+       <!-- (use tag   "<Strong>"  for text bold = jo text strong tag ke under hoga vo bold ho jayega) 
+            (use tag   "<em>"    for itatic = means words ko convert kr deta h italic meh jo em tag ke under hote h)
+            (use tag   "<br>"   for change a line means give content in next line which is after the br tag) -->
+    <hr> 
+       <!-- (use tag   "<hr>"   for add a horizontal ruler line    like that ------) -->
+    <p>second</p>
+    <p>third</p>
+    <p>fourth</p> 
+       <!-- (ager 4 different lines meh paragraph chahiye to use tag  => "P*4"   and like that for more paragraph) -->
+    <p>this is a paragraph</p>
+
+
+
+
+<!-- [Link &Images] -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links and images</title>
+</head>
+<body>
+    <a href="https://google.com" target="_blank">Go to google</a><br>
+    <a href="https://facebook.com" target="_blank">Go to faceook</a><br>
+    <a href="https://twitter.com" target="_blank">Go to twitter</a><br>
+    <a href="https://instagram.com" target="_blank">Go to instagram</a><br>
+        <!-- (<a href = "" </a>      is called as anchor tag.ismeh ham koi bhi link ya URL daal skte h vo ham open krna chahte h. or uske sath sath hame keyword daalna padega jisper user click kre to direct link website per jaa ske.)
+        (or ager chahte ho ki website new tab meh open ho to new attribute daalna padega anchor tag meh i.e target) --->
+    <img src="training.png" alt="Error loading image">
+        <!-- (<img src=""  alt=""
+             (    1. it is used to insert an image 
+                  2. Src  => ismeh ham URL & address of image insert krte h
+                  3. alt  => ye feild tab display hote h jb user's browers fail ho jata h image loadd krne meh) -->
+    <img src="" alt="remote image">
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+<!-- [Tables & ists] -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+</head>
+
+<body>
+          <!-- (Lists are of two types =>  ordered & unordered) -->
+    <ul type="circle">
+        <li>This is first item of my unorderd list</li>
+        <li>This is first item of my unorderd list</li>
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+        <li>This is first item of my unorderd list</li>
+    </ul>
+          <!--(unordered list display in this format =>  *.
+                                                         *.    .....like that.  in this we use "type = square or any other form"  command to    get different lists.)
+              (format of unordered list  =>  <ul> 
+                                                <li> text </li
+                                           </ul>) -->
+
+        
+
+    <ol type="i">
+        <li>This is first item of my orderd list</li>
+        <li>This is first item of my orderd list</li>
+        <li>This is first item of my orderd list</li>
+    </ol>
+         <!-- (ordered list display in this format =>  1.
+                                                       2.     .....like that.   in this we use "type = I or any other form"  command to get different lists.)
+              (format of ordered list  =>  <ol> 
+                                                <li> text </li
+                                           </ol>) -->
+
+
+    <!-- (Tables =>  it consist two parts table head and table body)-->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <!-- (it consist main head of table) -->
+            <tr>
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- (it consist body of table) -->
+            <tr>
+                <!-- (iska use justify krne ke lie kiya jata h ki ye row ka part h ya nhi.  under this tag we give the information of row
+                     (table meh more rows add krne ke lie => add a <tr> tag and add any number of row in a table)) -->
+                <td> Pooja </td>
+                <td> 34343 </td>
+                <td> Programmer </td>
+            </tr>
+            <tr>
+                <td> Ham </td>
+                <td> 3483 </td>
+                <td> HTML Expert </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
+
+<!-- [Form and Input Tag] -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- forms
+        (It contain document section  and ye format h form ka=   <form action="backend.php">) -->
+    <!-- input
+        (ye form ke under hota h jaha user information/details provide krta h AND ye kitne bhi types ke ho skte h like=> text, button, time) -->
+
+    <form action="backend.php">
+        <h2>This is form</h2>
+        <label for="name"> Name</label>
+        <div>
+            <!-- (div is a block element   iska mtlb yeh h ki ager ham two separate div tag use krte h different inputs ke lie to all inputs different line meh aa jayenge) -->\
+
+           <input type="text" name="myName" id="name">
+        </div>
+        <br>
+            <!-- ("<br>"   for change a line means give content in next line which is after the br tag) -->
+
+        <label for="role"> role</label>
+        <div>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+           <!-- (ager hame email input lena h to ye use krna padega=    'we use here name for backened'
+                <div>
+                    Email: <input type="email" name="myEmail">
+                </div>) -->
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate" id="">
+        </div>
+            <!-- (form meh date and time add krne ke lie ye use krenge=  
+                 <div>
+                    Date: <input type="date" name="myDate" id="">
+                 </div>) -->
+
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+            <!-- (ager koi number add krna h form meh to ye use krenge=
+                  <div>
+                    Bonus: <input type="number" name="myBonus">
+                  </div>) -->
+
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligible">
+        </div>
+            <!-- (eligiblity check krne ke lie ye use krenge=     'ye multiple options available krvane meh helpful h'
+                 <div>
+                    Are you eligible?: <input type="checkbox" name="myEligible">
+                 </div>) -->
+
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+            <!-- (radio button genders ke diye huiye options meh se ek option select krne meh capable h= 
+                  <div>
+                    Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+                    Other <input type="radio" name="myGender">
+                  </div>) -->
+
+        <br>
+        <div>
+            write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Sumit Now">
+                    <!-- (form meh submit button ke lie ham ye use krenge=     
+                          <div>
+                             Email: <input type="email" name="myEmail">
+                          </div>) -->
+
+            <input type="reset" value="Reset Now">
+                    <!-- (sare information ko reset krne ke lie ham reset button ka use krte h) -->
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+<!-- [Inline & Block Elements] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block elemnts</title>
+
+<!-- (Inline vo element hote h jo sirf vo space occupy krte h jo kisi tag ne bound kr rkha hota h jo kisi element ko define krta h
+      in english = those elements which only occupy space boundedby tags defining the element) -->
+
+<!-- (Block level element vo hote h jo apne parent element ka sara space le lete h     'takes the entire space of its parent element') -->
+</head>
+<body>
+    <p>this is a paragraph</p> <p>this is also a paragraph</p>
+         <!-- (this is an example of block level element) -->
+
+    <span>this is a span</span> <span>this is also a span</span>
+        <!-- (Block element = ye single line ki full width le leta h and other kisi content ko allow nhi krta uss line meh aane ke lie)
+             (lekin ager ham two text ko </span> tag ke bich meh likhte h to vo dono text ek hi line meh show honge) -->
+
+    <!-- li,ul,em,div,img-->
+        <!-- (ham inn tags ka bhi use kr skte h) -->
+</body>
+</html>
+
+
+
+
+<!-- [Ids & Classes] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>X
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids and Classes in HTML</title>
+        <!-- (Ids identifier hote h jiska use ham kisi bhi element ko styling , scripting etc krte time find krna meh krte h  ID ko ham hash # se denote krte h)--->
+        <!-- (Classes ko . dot se denote krte h  &  Classes kisi bhi element ko select or access krte h) -->
+</head>
+<body>
+    <h3>Ids and Classes</h3>
+    <div id="mainBox" class="redBag blackBorder">
+             <!-- (website per ham Id kisi bhi ek element ko hi de skte h) -->
+
+        this is mainBox
+    </div>
+    <span class="redBag"></span>
+    <!-- Emmet -->
+    <!-- select and press ctrl + / to comment -->
+    <!-- (. is for class and # is for id) -->
+    <span class="redBG"></span>
+    <span class="id"></span>
+    <div class="redBag blackBoader anotherclass"></div>
+
+    <!-- (emmet takes div tag as default) -->
+    <div class="blackBackground"></div>
+
+    <!-- (creating multiple elements using Emmet) -->
+    <!-- (span class=myClass myClass2 myClass3*4 + <Tab> to print 4 similar elements using emmet)-->
+    <span class="myClass myClass2 myClass3">first</span>
+    <span class="myClass myClass2 myClass3">second</span>
+    <span class="myClass myClass2 myClass3">third</span>
+    <span class="myClass myClass2 myClass3">fourth</span>
+</body>
+</html>
+
+
+
+
+
+<!-- [entities] -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities</title>
+         <!-- (Entity piece of tag hota h jo shru hota h '&' se or end hota h ';' ) -->
+
+</head>
+<body>
+    <div class="container">
+        <p>This is a &nbsp;paragraph</p>
+             <!-- (Extra space lene ke lie ham use krte h '&nbsp' ) -->
+
+        <p>paragraph is written like this &lt;p&gt;</p> 
+             <!-- (ager paragrapgh meh ye '<p>' show krna h to aise likhna padega) -->
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- [Semantic Tags  =  ye meaning provide krte h kisi bhi word ko] -->
+
+<!-- ( Semantic tag use kiye jate h kisi bhi website ko meaning provide krne ke lie and help krta h serach engine ko ki vo analyze kre properly)
+     ( Ex:-- 1. <header> 
+             2. <nav>  
+             3. <section>
+             4. <article>
+             5. <footer>    ) -->
