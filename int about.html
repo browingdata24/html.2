@@ -1,0 +1,477 @@
+<!-- ! = this is for HTML boilar plate. isper click krne se HTML format aa jayega.  ✅                                                 -->
+
+<!--   kisi bhi website ke structure meh important chiz "head and body" hote h.     ✅                                                   -->
+
+<!--   <> this is called as angular bracket. or jo bhi inn angular bracket ke ander likha jayega usse tag bolenge.   ✅                    -->
+
+<!--   <html> without forwardslash ager likha h to vo opening tag ho gya. & </html> ye forwardslash ke sath h isly closing tag.  ✅        -->
+
+<!--   koi bhi tag ager open krte h to usse close krna mandatory nhi h.   ✅                                                               -->
+
+<!--   HTML tag ke ander "body & head" hote h.        ✅                                                                                   -->
+
+<!--   head tag ke ander likhi hui chiz webpage per samane show nhi hote. head tag ke ander likhi hui chiz ka use tab name, tab
+       icon,etc change krne meh use hota h.           ✅                                                                                  -->
+
+<!--   head ke nader = title tag <title></title>.  eg: <head>
+                                                           <title>CONTENT</title>
+                                                       </head>                                              ✅                             -->
+
+<!--   jo bhi body tag ke ander likhenge vo webpage ke body page ke ander show hoga. just like main heading.  
+
+       a) body tag ke ander paragraph tag use kr skte h = <p>content</p> . eg: <body>
+                                                                                   <p>hello</p>
+                                                                               </body>                      ✅
+
+       b) bhut sare paragraph tag use krne ho taab use krte = p*4 and like that.                            ✅
+
+       c) ager without paragraph tag, content likhenge different lines meh to vo content ek line meh without space aa jayenge. 
+          eg: <body>
+                   hello
+                   hello
+              </body>                                                                                       ✅
+
+       d) or ager without tag content likhenge different lines meh to <br> tag use krna padega jisse vo content web page per 
+          different lines meh aa jayega.  eg: <body>
+                                                   hello<br>
+                                                   hello
+                                              </body>                                                       ✅
+                               
+       e) <br> tag se spacing minimum aate h between text/content while <p> tag se spacing maximum/sufficient aate h.    ✅           
+       
+       f) body tag ke ander headings bhi aate h and headings 6 tag ki hote h "h1 , h2 , h3 , h4 , h5 , h6" & h1 main heading hote h. ✅
+
+       g) headings = heading meh h1 h2 change krne ke  lie firstlt double click krke select krna h heading ko fir ctrl+D click krna h 
+                     then can change d                                                                  ✅
+              eg: 
+                     <h1>Heading 1</h1>     (use for main heading)
+                     <h2>Heading 1</h2>     (use for title) 
+                     <h3>Heading 1</h3>     (use for content or description) 
+                     <h4>Heading 1</h4>     (use for content or description) 
+                     <h5>Heading 1</h5>     (used rarely jab need ho tabhi) 
+                     <h6>Heading 1</h6>     (used rarely jab need ho tabhi)  
+
+       h) ham paragraph tag ke ander content kuch na ho to Lorem likh skte h, aise = <p>Lorem</p>. after writing this simply click 
+          on enter/tab this lorem is called as dumy text.                                               ✅                                                                              -->
+
+<!--   body tag ke ander hi ham img tag banayege jisse ham koi bhi imag insert kr skte h.                ✅
+
+       imag tag ke ander attribute likhenge "src" naam ka then src ke ander image ka naam dalenge jo insert krne h. photo name dalte
+       time correct name with png or other catogery likhna is important. 
+       similary, we have one more attribute is "alt" . alt ke ander No Image Found likhna hota h.
+
+       => "text-align:centre;"   is a styling or iska use kisi bhi image or text ko centre meh laane ke lie kiya jata h. & isko 
+           body tag ke ander likhte h.
+
+       => "object-fit:contain;" it  is also a styling or iska use kisi bhi comprased imag ko sytling dene ka h or ye img tag ke ander 
+           likhte h.
+
+       => "border: 1px solid color name;" iska use image ya text ko border dene ke lie krte h & isko bhi ham img tag ke ander likh 
+           skte h.   
+
+              eg: (this is also a format of inserting img)
+              <body style = "text-align:centre;">
+                   <img src="images/name of image.png" alt="No Image Found"
+                        width = "100px" height = "100px"
+                        style = "object-fit:contain;" 
+                        "border: 1px solid color name;">
+              </body>                                                                                             ✅                    -->
+
+<!--    CSS = Cascading style Sheet.    TYPES = Inline , Internal , External CSS.                                                        -->
+
+<!--    Internal CSS = ager code meh Style tag ka use kr rhe h to it means vaha internal CSS use ho rhe h. (majorly avoid internal CSS use)
+              eg: 
+               <style type="text/CSS">
+                    h1{
+                        color: red;
+                    }                                                                                                                    -->
+
+<!--    Inline CSS = ager body tag ke ander style attribute use kr rhe h to vaha inline CSS use ho rhe h. and body tag also after style tag.
+                    jaha per tag ke sath attribute style use krke styling define kr de h vo inline CSS hota h.
+        eg:
+        <body>
+            <h2 style="color:blue!important;></h2>   (meaning of important here is whole code meh khi bhi kuch likha ho but ye blue colro show
+        </body>                                       hoga heading meh & ye important ham khi bhi kitni baar bhi use kr skte h.)                                                                         -->
+
+<!--    External CSS = ismeh head tag ke ander link tag/attribute ka use krte h. ismeh ager ham koi externally file create krke usmeh 
+                       CSS/styling likhte h and usko apne HTML file meh link krke use krte h to external CSS ho gye.
+              eg: (this is also format of external CSS)
+               <head>
+                  <link rel="stylesheet" type="text/CSS" href=""
+               </head>                                                                                                                  -->
+
+<!--    Class = styling meh ager class name se phle ager dot(.) h to vo class h
+        eg: (this is also a format of class)
+            <body>
+                <h2 class="heading"></h2>
+                <h3 class="heading"></h3>
+                <h4 class="heading"></h4> 
+            </body>
+            .heading{
+                color:red;
+            }                                                                                                                           -->
+
+<!--    ID = styling meh ager class name se phle ager hash(#) aata h to vo class h. ek page per ek hi id use krne hote h same name 
+             id kisi or tag ko nhi de skte. 
+        eg: (this is also a format of ID)
+            <body>
+                <h2 id="color_orange"></h2>
+                <h3 id="color_red"></h3>
+                <h4 id="color_blue"></h4> 
+            </body>
+            #color_orange{       (ye naming CAMLCASE use krke bhi kr skte eg- #colorOrange{ } )
+                color: orange;
+            }                                                                                                                            -->
+
+<!--    List = list two types ki hote h first is = unordered list (ul) & second is = ordered lis (ol).        ✅                           -->
+                                                                            
+<!--    Unordered list = it represents as ul & iske ul ke ander different different list items chahiye to "li" ka use krenge. 
+                        and ham iss ul meh styling de denge to vase hi hamre list represent hoge.
+
+        eg: (this is also format of unordered list)
+
+        (hamne yaha list style square diya means list jo show hoge vo square box style meh hoge & aise hi ham isse circle, etc de skte h.
+        or ager styling means list representation meh kuch nhi chahiye ho tab list-style none likhenge.)
+            <ul style="list-style: square;">  
+                <li>Item1</li>  
+                <li>Item2</li> 
+                <li>Item3</li> 
+                <li>Item4</li> 
+                <li>Item5</li> 
+            </ul>                                                                                                 ✅                       -->
+
+<!--    Ordered list = it represents as ol & iske ol ke ander different different list items chahiye to "li" ka use krenge. 
+                       and ham iss ol meh styling ke ander type attribute ka use krenge usse hamre list represent hoge.
+
+        eg: (this is also format of ordered list)
+
+        (ham yaha list ko style, Type attribute se dete h ham type attribute meh jo bhi chiz likhenge list vase hi webpage per 
+        represent krege ager ham A likhte h type meh to list A,B,C aise represent hoge. )
+            <ol type="A">   
+                <li>Item1</li> 
+                <li>Item2</li> 
+                <li>Item3</li> 
+                <li>Item4</li> 
+                <li>Item5</li> 
+            </ul>                                                                                                ✅                       -->                                                                                             
+
+<!--    ham ordered ya unordered kisi bhi list meh item ke sath imag bhi insert kr skte h. 
+            eg: (this is also format for inserting image in unordered or ordered list.)
+            <ul style="list-style: square;">  
+                <li><img class="pin_img_size" src='pin_img.png'> Item1</li>  
+                <li><img class="pin_img_size" src='pin_img.png'> Item2</li> 
+                <li><img class="pin_img_size" src='pin_img.png'> Item3</li> 
+                <li><img class="pin_img_size" src='pin_img.png'> Item4</li> 
+                <li><img class="pin_img_size" src='pin_img.png'> Item5</li> 
+            </ul> 
+            .pin_img_size{
+                height:10px;
+                width:10px;
+                border-radius:50%;
+            }                                                                                                   ✅                         -->
+
+<!--    ager full webpage ka color change krna ho to body meh styling de skte h 
+            eg: 
+               <body style="background: yellow;">                          
+                    CONTENT
+               </body>
+        
+        issi meh ham linear gradient bhi use kr skte 
+            eg: 
+               <body style="background:linear-gradient yellow;">                          
+                    CONTENT
+               </body>                                                                                                                 -->
+
+<!--    anchor tag = it is represented as <a></a>   &  khi khi website per <a>Click here</a> to visit gooogle official website ye 
+        likha hote h. iske ander ek attribute hota h "href" iss href meh uss path ka naam aayega jaha user ko bhejna h.
+        yaha target bhi attribute h & blank use krne se main website band nhi hoge and jo bhi href meh hamne path dala h vo new blank 
+        page per open hoga.
+        But jaha multiple web pages honge hamre vaha target attribute ko use nhi krna. 
+            eg: 
+            <a href="https://google.com" target="_blank">Click here</a> to visit gooogle official website  
+            <br>
+            <a href="https://anveshanfoundation.org" target="_blank">Click here</a> to visit anveshan foundation official website   ✅    -->
+
+<!--    ham anchor tag ka color bhi change kr skte h
+        eg: 
+        a:visited{             (iska mtlb ki jo link visit ho chuki h means jo link click ho chuki h uska color orange ho jaye)
+            color:orange;
+        }
+            
+        eg: 
+        a:hover{            (hover mtlb ki jab ham kisi bhi link per chahe vo visited ho ya na ho usper cursor jayenge 
+            color:red;                to vaha red  color show hoga )
+        }
+        
+        eg: 
+        a:active{          (active mtlb ki jab ham kisi bhi link per chahe vo visited ho ya na ho usper cursor lekr jayenge tab to vo
+            color:pink;     hover property krega per jab ham uss per click krenge to vo minute of time ke lie pink color show krega)
+        }
+    
+    And ager "to visit anveshan foundation official website" iska color change krna h jab cursor iss text ke uper jaaye 
+             to a ki jagah span likh denge and official website ke baad bhi ko span tag ke ander likh denge.
+        eg:
+    <a href="https://anveshanfoundation.org" target="_blank">Click here</a> <span>to visit anveshan foundation official website</span> 
+        span:hover{ 
+            color:red; 
+        }                                                                                                                             -->
+
+<!--   Cursor ko pointer ki tarah show krne ke lie . we can change tha cursor by doing inspect on webpage.
+            eg: 
+            span:hover{ 
+                color:red; 
+                coursor:pointer;
+            }                                                                                                                        -->
+
+<!--A) 
+        span ki jagah <small> use krenge to jiss text ke lie small use kr rhe h vo small in size ho jayega.
+            eg:
+    <a href="https://anveshanfoundation.org" target="_blank">Click here</a> <small>to visit anveshan foundation official website</small> 
+        span:hover{ 
+            color:red; 
+        } 
+
+    B) 
+       span ki jagah <sup> use krenge to jiss text ke lie sup use kr rhe h vo upward shift ho jayega.  (sup=superscript)
+        
+    C)
+       span ki jagah <sub> use krenge to jiss text ke lie sub use kr rhe h vo downward shift ho jayega. (sub=subscript)
+         eg: 
+         <ul>
+            <li>H<sub>2</sub>o</li>
+         </ul>
+    => iska output H2o hoga.                                                                                                        --> 
+
+<!--    ager webpage per video dalne ho to <video> tab ka use krenge & youtube se kisi bhi video per right click krke 
+        <>copy embed code per click krke link copy krke video tag ke ander paste kr denge.
+        eg: 
+        <video>
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/ZVtMBxFtuqg" title="“Godse” New Released 
+            Hindi Dubbed Full Movie {4K ULTRA HD} | Satya Dev | Aishwarya Lekshmi" frameborder="0" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        </video>
+Above Format Se Sirf Video Frame Aayega BUT download krke link paste krenge to vo video show and chalege bhi.
+then image downloading insert krne ke lie below code likhenge
+        eg:
+          <img src="gif_image.gif">                                                                                               
+        
+        
+Similary ager video ki jagah pdf chahiye web page per to 
+            <iframe src="https://anveshanfoundation.org/documents/events/brochure%20Blockchain%20(Internship).pdf".....
+        
+    ager kuch bhi webpage per chahiye video,pdf or other source to <iframe> likh kr source name likh denge baki width and other
+    details iframe khudh likh deta h.                                                                                                 -->
+
+
+<!--    Tables=   Table create krne ke lie <table> tag ka use krte h.
+                  Table ke ander rows & columns hote h. 
+                  Rows banane ke lie ham <tr> tag ka use krte h. (tr = table row)
+                  columns banane ke lie <td> tag ka use krte h.  (td = table data)
+        Sbse phle <table> tag banayenge fir uske ander <tr> tag banayenge fir uske ander <td> tag banayenge or iss <td> tag ke
+        ander information likhenge or jitne <td> tag banayenge utane column ban jayenge.like below example.
+        eg: (this is also format of Tables)
+        <body>
+            <table border="1">                           (border means webpage per ek table aa jayege jismeh information hoge.)
+                <tr>
+                    <td>S.NO.</td>
+                    <td>Name</td> 
+                    <td>Roll Number</td>
+                    <td>Course</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pooja</td>
+                    <td>087</td>
+                    <td>B.Tech</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Payal</td>
+                    <td>088</td>
+                    <td>M.Tech</td>
+                </tr>
+            </table>
+        </body>                                                                                                                  ✅
+    
+    
+Table ko ham bootstrap ki help se bhi bana skte h.ismeh "table-bordered" ka use krte h webpage per table meh border ka jaaye isly
+& ismeh "table-striped" ka use krte h taki webpage per table meh strips aa jaye isly.
+& ager hame kuch rows ka color change krna h to we use "table-heading" class. we introduce it in <tr> tag and then we give styling 
+to it after <title> tag.
+    eg:(this is also format of making table using bootstrap) 
+            <style type="text/CSS">
+                .table-heading{
+                    background:blue!important;
+                }
+        <body>
+            <div class="container">
+                <div class="row>
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-striped">
+                            <tr class="table-heading">
+                                <td>S.NO.</td>
+                                <td>Name</td> 
+                                <td>Roll Number</td>
+                                <td>Course</td>
+                            </tr>                                                                                                      -->
+     
+<!--    Bootstrap = a) ismeh sbse phle ek tag banate h <div> & fir ismeh class dalte h "container".
+                    b) Container ek pre-defined class h jo already bootstrap meh hote h. 
+                    c) jaha bhi container ko introduce krenge vaha "row" jarur bante h.
+                    d) column banane ke lie hame jo class chahiye hote h vo "col" chahiye hote h. column size basically medium lete h
+                       jisko denote krte h "md" se and jitne no. of column chahiye usse md ke sath likhte h "md-3" aise.
+                    e) ismeh ham ek or chiz add krenge or vo h bootstrap css styling jo ki ham google se add krenge. google per 
+                       bootstrap likhenge then first jo option aayega uss per click krke vaha se styling copy kr lenge.
+                    f) jo styling bootstrap ki google se copy krenge usse title tag ke just baad paste kr denge.
+A)  eg: 
+        Yaha bootstrap styling link paste hoga.
+        </head>
+        <body>
+            <div class="container-fluid">                (ye fluid extra side gaps ko remove kr deta h first & last containers ke)
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="IMAGE PATH LIKHNA H" style="width: 100%;">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="IMAGE PATH LIKHNA H" style="width: 100%;">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="IMAGE PATH LIKHNA H" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </body>                                                                                                                        
+    
+
+B)  Ager ham above program meh se img portion ko hta denge to code aise likha jayega. isse sirf border & box & column & row webpage 
+    per show hoga.
+eg:
+<style>
+    .col-md-4, col-md-6{     (ager same class chahiye same styling ki to first class ke sath hi , laga kr introduce kr skte h)
+        border: 1px solid black;
+        height: 50px;
+        margin-bottom: 10px;                    (margin ka use boxes ke bich gapping dene ke lie krte h.)
+    }
+</head>
+    <body>
+        <div class="container">               
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div> 
+    </body>             
+
+C)  Aagar kisi particular column ke ander multiple rows banane h 
+eg: 
+ <div class="row">
+        <div class="col-md-3">
+            <div class="row>
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+            </div>"
+</div>                                                                                                                                -->
+
+<!--    Contact Form = ismeh sbse phle ek container banayenge then usmeh row tag banyenge and uss row tag ke ander col-md-4 banyenge.  
+    a) Contact form meh Name, Gender, Email, Phone Number, Address, Buttons, Radio, Checkboxes.
+    b) Gender ka lie <select> tag ka use kiya jata h.
+    c) Adress ke lie <textarea> tag ka use krte h under <label> tag ke.
+    d) Radio meh ham Course le skte h under <label> tag. & ismeh <input> tag ka use krte h.
+    e) checkbox meh Hobbies likh skte h under <label> tag.
+    f) subimit button btane ke lie ham label tag ki jagah <button> tag ka use krenge.
+    g) large box ko margin dete h and issi large box ke ander present small box ko padding dete h.
+    h) background tag <body> tag ke ander aata h. & video tag ko bhi body> tag ke ander likhte h. & <video> tag ke ander video dalne 
+       ke lie <source> tag ka use krte h jismeh video ka url/link dalte h.
+        
+eg: (this is also format of adding Name, Mobile number, email, gender)
+<body>
+    <div class="container">                
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="border 1px solid #000; padding-bottom="20px" margin-top: 20px;> (iss border se whole form 
+                                                                                        jo hoga vo ek black box ke ander aa jayega.)
+           
+ (for form) <form>
+                <div class="row">  (iss form tag se form meh jab bhi blank space per cursur lekr jayenge to please fill field likha aayega.)
+                </div>
+            </form>
+
+            <div class="row">                                                                
+            <div class="col-md-12">
+ (for name)     <label>Name</label>
+                input type="text" name="name" class class="form-control placeholder=Name" > (class=form-control ka use box ko name ke 
+            </div> niche laane ke lie kiya jata h & placeholder meh ham jo bhi chiz likhenge vo jo filling box banaya h usmeh aa jayega.)
+            <div class="col-md-12">
+ (for email)    <label>Email</label>
+                input type="email" name="Email" class class="form-control placeholder=Email" >
+            </div>
+            <div class="col-md-12">
+ (for mobile)   <label>Mobile</label>
+                input type="Number" name="mobile" class class="form-control placeholder="mobile" > 
+            </div>
+            <div class="col-md-12">
+ (for gender)   <label>Gender</label>
+                <select class="form-control" name="gender">
+                    <option value="" selcted disabled>Please Select</option> 
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>    
+            </div>
+            <div class="col-md-12">
+ (for Address)  <label>Address</label>
+                <textarea class="form-control name="Address" placeholder="Address"></textarea> 
+            </div>
+            <div class="col-md-12">
+ (for Course)   <label>Course</label>
+                <br>
+                <input type="radio" name="course" value="B.Tech"> BTech
+                <input type="radio" name="course" value="M.Tech"> BTech
+                <input type="radio" name="course" value="Ph.D"> BTech
+            </div>
+ (for Checkbox) <div class="col-md-12">
+                <label>Hobbies</label>
+                <br>                                              (square brackets lagane se as a string representaion ho gya.)
+                <input type="checkbox" name="Hobbies[]" value="Cricket"> Cricket
+                <input type="checkbox" name="Hobbies[]" value="badminton"> Badminton
+                <input type="checkbox" name="Hobbies[]" value="Hockey"> Hockey
+            </div>
+ (for submit)   <div class="col-md-12" style="margin-top: 20px;">
+                <button type="submit" class="btn btn-primary form-control" name="submit_button">Submit</button>
+            </div>                  (btn-primary: submit button ko color deta h. primary ki jagah kuch or bhi use kr skte h.)
+        </div>
+    </div>
+</body>                                                                                                                                -->
+
+<!--     Modal :
+    a) modal ko <body> tag ke ander div ke ander class meh likhte h.
+    b) modal ke ander "modal-dialog" class bhi hote h jiska mtlb ye hota h ki jb ham khi right click krte h to jo options 
+       ya information aate h usse ham dialoge bol skte h.
+    c) modal-dialoge ke ander ek or class aate h "modal-content" iska mtlb ye h ki modal ke ander content ky dalna h.
+       Content ke ander theen chize common hote = first, header. second, body. third, footer. inko ham div ke ander 
+       as a class likhe h.
+    d) Bootstrap use krte time code meh bootstarp link ka mention hona important h.
+    eg: 
+    <body>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        
+            <div class="modal-body">
+                Modal body..
+            </div>
+        
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </body>-->
+         

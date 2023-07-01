@@ -1,0 +1,1249 @@
+<!--(CSS stands for = Cascading Style Sheets)
+    (CSS style deta h HTML Web pages ko & ye web pages ko or modern looking kr deta h)
+    (CSS ek style sheet language h jiska use HTML web pages ko handle krne ke kiya jata h)  --->
+
+<!--(CSS syntax =  P{
+                        color:blue;
+                    }                            
+    P= Selection h jo decide krta h HTML ka kon sa part CSS website applied krege,,,,,    Color= ye ek property h jo add/change krte h background, border, width,etc. ,,,,,,,,  blue= ye value h and jo value ham provide krenge uske according hi properties change honge)-->
+
+<!--(CSS multiple properties ko ek sath target kr skta h 
+     EX:--   p.intro{ 
+                    background \-color:red:border-value:3px;
+                   }                                           )  -->
+
+<!-- (CSS ko three ways se add kr skte h
+        a) Inline-CSS =  ismeh CSS element ko directly add kr skta h using style attributes. ye allow krta h unique style apply krne ke lie to one HTML at a time.
+        b) Internal-CSS = ismeh CSS ko head tag ke ander rkha jata h.  "<syle> tag". ise <style> element ke ander <head> section meh defined kia jata h.  
+        c) External-CSS = ismeh CSS ko separately CSS style sheet ke ander rkha jata h. It involve two steps:--
+                          (i) first, CSS ko CSS file meh likhna 
+                          (ii) Second, isi CSS file ko Markup meh include krna. ) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic Tag</title>
+</head>
+<body>
+    <h3>Semantic Elements</h3>
+    <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, facere dolorem nihil inventore accusamus fugit dignissimos delectus et nam repudiandae quas architecto numquam? Totam vel deserunt quia voluptate placeat pariatur.</summary>
+</body>
+</html>
+
+
+
+
+
+<!-- (About types of CSS) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tut</title>
+    <link rel="stylesheet" href="10.css">
+    <style>
+        p{
+            color: plum;
+            background-color: beige;
+        }
+    /*(<head>
+        <style>
+            p{
+                color: plum;
+                background-color: beige;
+            } 
+        <style>
+      <head>    
+    iss above format meh hamne ""Internal CSS format"" use kiya h.)  */ 
+
+    </style>
+</head>
+<body>
+    <h3>This is CSS tut</h3>
+    <!-- <p style="color: aqua;">This tut will teach you everything you need to know about HTML</p> -->
+    <p>This tut will teach you everything you need to know about HTML</p>
+</body>
+    <!-- (<body>
+            <h3>This is CSS tut</h3>
+            <p>This tut will teach you everything you need to know about HTML</p>
+          </body>
+        iss above format meh hamne ""Inline CSS format"" use kra h.) -->
+
+</html>
+
+
+
+
+
+<!-- (Selectors in CSS) -->
+
+     <!-- (CSS selector ka use kisi bhi content ko select krne ke lie kiya jata h jise style krna cahate h.
+           CSS selector select krta h HTML element accor. to it's ID, Class, type, attributes, etc.) -->
+     <!-- (CSS selector 4 types ke hote h: 
+                a) CSS element selector    
+                b) CSS class selector
+                c) CSS id selector
+                d) CSS grouping selection.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* (""element selector"") */
+        p{
+            border: 2px solid red;
+        }
+        /* (""id selector"") */
+        #redElement{
+            color: red;
+        }
+
+        /* (""class selector"") */
+        .bgBlue{
+            color: aqua;
+            background-color: gold;
+        }
+
+        /* (""grouping selector"") */
+        footer, span{
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selector</h3>
+    <p>This is a simple paragraph to demonstrate css selector</p>
+    <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate css selector</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selector</p>
+        <span>this is span</span>
+    </div>
+    <!-- (<h3>CSS Selector</h3>
+          <p>This is a simple paragraph to demonstrate css selector</p>
+          <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate css selector</p>
+          <div>
+              <p>This is yet another simple paragraph inside div to demonstrate css selector</p>
+          </div>   
+                    This above format is ""Element Selector format"") -->
+
+    <footer>This is footer</footer>
+</body>
+</html>
+
+
+
+
+
+<!-- (Developer tool) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer tools</title>
+    <style>
+        p{
+            color: plum;
+            font-style: italic;  
+            background-color: antiquewhite;
+        }
+        .bgPrimary{
+            background-color: #888;
+        }
+/* (Some tips while defining a color class :-- don't directly use the name of color as the class name instead use =
+        a) colorprimary
+        b) colorsuccess
+        c) colorwarning.   ) */
+
+    </style>
+</head>
+<body>
+    <h4 class="byPrimary">Developer tool tut</h4>
+    <p>This is a tut for Chrome Developer tools</p>
+</body> 
+</html>
+
+
+
+
+
+<!-- (Fonts) -->
+
+<!-- (CSS fonts, font boldness, font family, font style and size, etc properties define krte h text ki.) -->
+
+<!-- (CSS font format given below :--
+        <body> 
+             <h4>CSS Fonts</h4>
+             <p>Lets play with<span>fonts</span>. It is very exciting</p>
+        </body>                                                                ) -->
+
+<!-- (CSS fonts 2 types ke hote h) 
+        a) Web-safe font = ye pre-installed hote h most operating system meh.
+        b) Web font = inhe import krna hota h web se. ) -->
+
+<!-- (whole list of web saved fonts available h google per nam se = ""CSS font stack"") -->
+
+<!-- (ager google se code import krna h to good website is = ""google fonts"") -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <style>
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* (font stack list of fonts hota h jo order of preference of order ham chahte h usmeh ye listed hote h) */
+
+            font-size: 33px;   /* 1/96th of an inch */
+        /* (font-size property use to set the size of fonts.) */
+
+            line-height: 1.3em;   /*multiple of parent font size*/
+        /* (line-height font ka use font ke bich spacing ke lie kiya jata h.  ""in b/w current & previous font"") */
+
+         }
+
+         span{
+            font-weight: bold;
+        /* (kitna thin or thick character text meh display hoga usko set krne ke lie iska use kiya jata h.) */
+
+            font-style: italic;
+         }
+    </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    <p>Lets play with <span>fonts</span>. It is very exciting</p>
+</body>
+</html>
+
+
+
+
+
+<!-- (Colors in CSS) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+        #firstPara{
+            color: red;   /* color by name */
+        /* (first method of defining the color in CSS is = directly color name likhna) */
+        
+        }
+        #secondPara{
+            color: rgb(23, 255, 33);  /* color by rgb value */
+        /* (Second method of defining the color in CSS is = with help of RGB.  RGB ki color range 0 to 255 hote h) */
+
+        }
+        #thirdPara{
+            color: #abdbe7;  /* color by hex value */ 
+        /* (Third method of defining the color in CSS is = giving hex colours) */
+
+            background-color: rgb(7, 8, 9); 
+        }
+    </style>
+<head>
+<body>
+    <h2>This is  my first box</h2>
+    <p id="firstPara">This is a paragraph from first box</p>
+
+    <h2>This is  my first box</h2>
+    <p id="secondPara">This is a paragraph from second box</p>
+
+    <h2>This is  my first box</h2>
+    <p id="thirdPara">This is a paragraph from third box</p>
+</body>
+</body>
+</body>
+</html>
+
+
+
+
+
+<!-- (Height, width, borders and backgrounds in CSS) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and backgrounds</title>
+    <style>
+        #firstPara{
+           background-color: aqua; 
+           height: 100px;
+           width: 455px;
+           border: 4px solid gray; 
+           /* border-width: 4px;
+           border-color: blueviolet;
+           border-style: solid; */
+           border-radius: 11px;
+        }
+
+        #secondPara{
+           background-color: rgb(58,243, 98); 
+           height: 100px;
+           width: 455px;
+           border-top: 2px solid burlywood;
+           border-right: 2px solid gold;
+           border-left: 2px solid palevioletred;
+           border-bottom: 2px solid lightcoral;
+           border-bottom-left-radius: 2px;
+           border-top-left-radius: 4px;
+           border-top-right-radius: 14px;
+           border-bottom-right-radius: 24px;
+        }
+
+        #thirdPara{
+           height: 100px;
+           width: 455px;
+           background-image: url('https://unsplash.com/photos/zYZhrXYmGv4');
+           border: 2px solid palegreen;
+           background-repeat: no-repeat; /* (repeat-x and repeat-y will make it repeat on x and y axis) */
+           /* (background-position: 192px 34px;) */
+           /* (background-position: centre centre;) */
+           background-position: bottom right;
+           /* (background-position: top centre;) */
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is a paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is my second paragraph</p>
+    
+    <h3>This is third heading</h3>
+    <p id="thirdPara">This is my third paragraph</p>
+</body>
+</html>
+
+
+
+
+
+<!-- (Box Model, Margin, Padding) -->
+
+<!-- (Content = content of box jaha per text and image dikhate h.
+      Padding = Content ke around area ko padding bolte h  and padding transparent hote h.
+      Border = Border padding or content ko cover krta h.
+      Margin = Border ke outside area ko margin khete h  and it is also transparent.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+
+            /* we can set margin/padding for left, bottom, right, top like this
+            padding-top: 79px;
+            padding-bottom: 79px;
+            padding-right: 79px;
+            padding-left: 34px; */
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 32px;
+            margin-right: 23px; */
+
+            /* padding: top right bottom left;
+            /* margin: top right bottom left; */ 
+
+            padding: 23px 56px 6px 78px;    
+            margin: 23px 56px 6px 78px;
+              /* (1st value is for top.
+                  2nd value is for bottom.
+                  3rd value is for left.
+                  4th value is for right.) */ 
+
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px; 
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 133px; 
+            box-sizing: border-box;
+               /* (element ko width dene ke bad container meh padding apply krne se width meh bhi changes aate h, it is because element ki acutal width meh margin already added h. ""if we wnat ki aisa na ho isly size boxing ka use kiya jata h"".) */
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos molestias odit magni voluptatem fuga possimus alias ducimus eveniet nesciunt et! Aperiam praesentium sed nobis nulla possimus recusandae quae, maxime quisquam.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos molestias odit magni voluptatem fuga possimus alias ducimus eveniet nesciunt et! Aperiam praesentium sed nobis nulla possimus recusandae quae, maxime quisquam.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos molestias odit magni voluptatem fuga possimus alias ducimus eveniet nesciunt et! Aperiam praesentium sed nobis nulla possimus recusandae quae, maxime quisquam.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- (Alignment) -->
+
+<!-- (ismeh float and clear h) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid gainsboro;
+            background-color: seashell;
+            margin: auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: plum;
+        }
+        #fruits{
+            float: right;
+            /* (float btata h koi element kaise float krega 'jisko float krenge vo jis side float krenge uss side shift ho jayega'. iska use    content ki positioning and formatting ke lie bhi kiya jata h.) */
+            /* ( a) left = element container ke left side float ho jate h.
+                 b) right = element container ke right side float ho jate h.
+                 c) None = ismeh element float nhi krte. ye property default h.
+                 d) Inherit = iss property meh element parent value ko float krte h.) */
+
+            width: 48%;
+        } 
+
+        #computer{
+            float: left;
+            width: 48%;
+        }
+
+        #stationary{
+            /* float: left; */
+            clear: both;
+            /* (Clear btata h kon sa element float krega or kis side krega.) */
+
+            clear: left;
+            width: 99%;
+        }
+        p, h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+            /* (text-align property overwrite kr deta h likhe huiye para ko jo phle likha hoga vo phle aayega. and jiss side align krenge text ko vo uss side shift ho jayega.) */
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum officiis quibusdam pariatur? Tempora perspiciatis aspernatur dolores repudiandae itaque magni, labore rem delectus optio, autem repellendus eaque, consequatur voluptatem corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum porro aut eos sapiente, incidunt quidem. Veritatis eligendi nisi, minima earum soluta rem dolores ducimus, ex repellat optio repellendus. Sunt enim quam dolorem ex odit. </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta suscipit optio, minima deserunt alias mollitia totam nam labore praesentium animi reiciendis doloribus asperiores! Velit minus amet et quis voluptatibus quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur quos officiis pariatur vero dolore dolorem animi quo voluptatum, magnam numquam inventore, delectus voluptas soluta eligendi, libero nihil sint cum placeat. Commodi, distinctio iusto. </p>
+        </div>
+        <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae aliquam explicabo omnis minus cum, pariatur ducimus illo, eum similique itaque iure delectus dolorum nihil. Magnam reiciendis laborum tenetur facilis labore?</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- (Styling Link and Buttons) -->
+
+<!-- (Button two types ke hote h = one is 'normal button' & Second is 'linking to some website'.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+           <!-- (pseudo class ka use element ki special state ko define krne ke lie kiya jata h.) -->
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223, 245, 201);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{  
+            /* (ye format ka use link meh se underline ko htane ke lie kiya jata h.) */
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            /* (ye format ka use button ke background ko or text ke color ko change krne ke lie kiya jata h.) */
+            color: rgb(39, 7, 7);
+            background-color: rgb(238, 212, 217);
+        }
+        a:visited{
+            /* (iss format meh button ke anchor tag ko visit krna hota h and visited link per click krna hota h jo background color change krta h.) */
+            background-color: ivory;
+        }
+        a:active{
+            /* (iss format meh kisi bhi button per visit krke usse click krne se vo active ho jata h and different properties show krta h.) */
+            background-color: darkcyan;
+        }
+        .btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            background-color: bisque;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            /* (ye format button meh pseudo selector put krne ke lie kiya jata h.) */
+            color: goldenrod;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloribus odit maiores aut placeat possimus cupiditate ipsam, expedita harum facere quo id, ullam repellat architecto libero esse veritatis modi enim dolores impedit laborum corrupti.</p>
+        <a href="https://yahoo.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    <!-- (<a href="https://yahoo.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>      
+                 This above format is for button.) -->
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- (Creating a navigation menu) -->
+
+<!-- (navigation bar list of links hota h.   and   using <ul>&<li> it we can obtain navigation bar.) -->
+
+(<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            /* (iss format ka use navigation bar ke color ko change krne ke lie and uske ends ko circular banane ke lie kiya jata h.) */
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            /* (after writing below code, background ht jata h because of overflown by the parent element. to avoid this write 'ul' format.) */
+            overflow: auto;
+        }
+        .navbar li{
+            /* (iska use all nav element ko horizontal line meh laane ke lie krte h.) */
+            float: left;
+            list-style: none;
+            /* (list-style property ka use all bulleted points ko navigation items meh remove krne ke lie kiya jata h.) */
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            /* (using this format navabr meh jitne element present h unn sab meh padding add ho skte h.) */
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            /* (kbhi bhi ham pointer ko place krenge kisi bhi 'li' element meh to color change ke lie iss format ka use krte h.) */
+           color: red;
+        }
+        .search{
+            /* (navigation menu meh serach bar create krne ke lie serach tag ko using this format style kr skte h.) */
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            /* (style menu available ho navigation bar meh isly ye format use krte h.) */
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="serach">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+    <!-- (<div class="serach">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>  
+                        using this above code, navigation menu meh serach bar add ho skta h.) -->
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>) 
+
+
+
+
+
+<!-- (Display Property) -->
+<!-- (display property ko tab apply krte h jab element ko block or inline element ki tarah treate krte h. and the layout used for it's children. Such as flow layout, grid & flex.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            /* (web-page ke sabhi element ko centre meh la skte h by adjusting width of the block element i.e heading. using header tag.) */
+            margin: auto;
+            border: 2px solid royalblue;
+            width: 1200px;
+        }
+        /* img{
+              (img tag is inline :-- isko centre meh lane ke lie set property display as a block.)
+            margin: auto;
+            display: block;
+            width: 44px;
+        }
+        h3{
+            text-align: center;
+                (text haeding move krte h towards left usse centre meh laane ke lie text-inline property ka use krte h.)
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }         (this whole above green tag is display CSS property.)*/
+        .box{ 
+            border: 4px solid black;
+            background-color: gainsboro;
+            margin: 4px 0px;
+            padding: 23px;  
+            display:inline-block;
+              /* (display-inline property space lete h according to the size of element.) */
+              /* (display-block property element ki width or margin set krte h manually.) */
+            width: 33%; 
+            box-sizing: border-box;  
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }     
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg" alt="">
+        <h3>Welcome to Pooja's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis vel illum culpa et! Non amet repellendus fugiat cum dicta quaerat facilis impedit atque ullam voluptatibus officia illum, in sint suscipit esse sequi molestias expedita totam ipsum debitis eaque, asperiores rem ut! Ut, totam!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis vel illum culpa et! Non amet repellendus fugiat cum dicta quaerat facilis impedit atque ullam voluptatibus officia illum, in sint suscipit esse sequi molestias expedita totam ipsum debitis eaque, asperiores rem ut! Ut, totam!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis vel illum culpa et! Non amet repellendus fugiat cum dicta quaerat facilis impedit atque ullam voluptatibus officia illum, in sint suscipit esse sequi molestias expedita totam ipsum debitis eaque, asperiores rem ut! Ut, totam!</p>
+
+    <!-- (using "container & box tag" box ko style kr skte h.)  -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- (Position absolute, relative, fixed and sticky in CSS) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: oldlace;
+            height: 3444px;
+        }
+           /*CSS position: static(default "it is a default position of HTML"), absolute, relative("iska use HTML element position ko uski normal position ke relative kr ske isly krte h"), fixed, sticky */
+          
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+                 /* (normal position se away adjust krne ke lie usko set krte h top, right, bottom and left properties ke through.) */
+
+        }
+        #box3{    
+    /* (box3 tag ka use position change ke lie kia jata h from "static to relative".) */
+
+            /* relative: relative to its normal position and will leave a gap at its normal position*/
+            /* position: relative; */
+
+            /* absolute: asolute to the position of is first parent*/
+            /* position: asolute; */
+
+            /* top: 34px;
+            left: 134px; */
+            /* fixed:Position the element relative to the browser window; */
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px; */
+
+            /* sticky: */
+            position: sticky;
+            top: 3px;
+    /* (position: relative = jis element ki absolute position hote h vo apne parent element ki position ke according move krta h. agar parent element nhi h tab HTML element placed ho jata h relative to the page.) */
+    
+    /* (position: fixed = ismeh element apne position per stuck rhta h even after the page is scrolled. HTML element fixed spot per rhta h isly iss position property ka use krte h.) */
+    /* (using this box tag box fixed rhta h top right corner of page in the image.) */
+
+    /* (position: = sticky = ye property hybrid h relative or fixed position ki. ) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+       <div class="box" id="box1">1</div>
+       <div class="box" id="box2">2</div>
+       <div class="box" id="box3">Chat with us</div>
+       <div class="box" id="box4">4</div>
+    </div> 
+</body>
+</html>
+
+
+
+
+
+<!-- (Visibility & Z-index in CSS) -->
+
+<!-- ("visibility property" = iss property ka use HTML element ko hide or show krne ke lie kiya jata h without changing layout of the page.   and hidden element hide hone ke baad bhi space use krte h page ka because it is still there.) -->
+
+<!-- ("Z-index property" = jab bhi HTML element collapse krte h ek dusre se tab smaller z-index value element covered ho jata h larger z-index value element se. z-index property static position per work nhi krte.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility andz-index</title>
+    <style>
+        /* (we created four boxes of different color) */
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 49px;
+            background-color: rgba(0, 255, 255, 0.718);
+            z-index: -35;
+        }
+        #box2{
+/* (display:none = ye completely remove kr deta h HTML tag ko webpage se. like it was never there.) */
+/* (visibility:hidden = ye tag ko invisible kr deta h but not completely remove or ye tag still space occupy krta h page ka.) */
+
+            background-color: red;
+            position: relative;
+            top: 14px;
+            /* (z-index: will work only for position: relative, absolute, fixed or sticky;) */
+            
+            z-index: -16;
+            /* (visibility: hidden;  will hide the element but will show its empty place) */
+            /* (display: none;  will hide the element and the space)  */
+        }
+        #box3{
+            background-color: blueviolet;
+        }
+        #box4{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
+
+
+
+
+
+<!-- (Flexbox property in CSS) -->
+
+<!-- (flexbox property = that could offer space distribution between items.) -->
+
+<!-- (Responsive Design = is a way for a web developer jisse vo aise website bana ske jo all devices adapt kr ske. isko achieve krne ke various tarike h :
+         a) by using em/vh/vw units over pixels.
+         b) by using max-width/max-height.
+         c) using CSS media queries. 
+         d) setting up the viewpoint.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* (Initialize the container as a flex box) */
+
+            display: flex;
+            /* (Flex properties for flex container) */
+
+            flex-direction: row;
+    /* (default value of flex direction is row) */
+
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            flex-wrap: nowrap; 
+    /* (default value of flex direction is no-wrap) */
+            
+            flex-flow: row-reverse wrap;
+    /* (This is a shorthand for direction and flex wrap) */
+
+    /* (justify-content will justify the content in horizontal direction) */
+            justify-content: center; 
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; 
+
+    /* (justify-content will justify the content in vertical direction) */
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; 
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: thistle;
+            border: 2px;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            /* Flex property for a flex item */
+            /* higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+            flex-basis: 320px;
+            /* when flex direction is set to row flex-basis: will control width */
+            /* when flex direction is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* flex: 2 2 230px; */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- (size units = em,rem,vh,vw) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            width: 400px;
+            /* height: 300px; */
+
+    /* (vh = it stand for viewpoint height. vh = 1/100times of viewpoint height. example: suppose height of browser is 1000px so, 
+    1vh = (1/100)*1000 = 10px.) */
+            height: 100vh;
+
+    /* (vw = it stand for viewpoint width. 1vw = 1/100times of view point width.  example: Suppose width of browser is 1000px so,
+    (1/100)*1000 = 10px.) */
+            width: 100vw;
+
+            font-size: 10px;
+            border: 2px solid rgb(255, 0, 0);
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+    /* (em = font size parent element se relative hota h.  10em means= 10times of parent element.  10*10 = 100px.) */
+            font-size: 3em;
+            padding: 3em;
+        }
+        #second{
+    /* (rem = r stand for roof. element ko font size milta h root ke font size ke according. In general, <html> is root element.
+    10rem = 10times of root element.) */
+            font-size: 3rem;
+             padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="Second">This is second heading</h1>
+        <h1 id="Third">This is third heading</h1>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+<!-- (Media Query in CSS) -->
+
+<!-- (media query ka use tab krte h jab ham user's screen ke according website presentation customise krna chahte ho. media query logical operation h, jab bhi media query true aate h tab related CSS targeted element per apply krte h.) -->
+
+<!-- (media query composed of two things: media type & expression.) -->
+
+<!-- (syntax of media query : 
+            @media media-type and (media-feature)
+            {
+                /*CSS rule to be applied*/ 
+            }                                            ) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            text-align: center;
+            font-size: 35px;
+            background-color: orchid;
+            color: black;
+            display: none;
+        }
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: aquamarine;
+            }
+        }
+
+        @media (min-width:500px) and (max-width: 500px){
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:500px) and (max-width: 800px){
+            #box-3{
+                display: block;
+                background-color: yellowgreen;
+            }
+        }
+        @media (min-width:800px){
+            #box-4{
+                display: block;
+                background-color: indianred;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek iPhone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek Computer hoon</div>
+    <div class="box" id="box-4">Mai ek Widescreen computer hoon</div>
+</body>
+</html>
+
+
+
+
+
+<!-- (more on Selector) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+    h1{
+        background-color: orchid;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+/* if p is contained by any li which is contained by div  */
+    /* div li p{
+        color: orange;
+        background-color: aqua;
+        font-weight: bolder;
+    } */
+
+/* if p is right inside div then this css will applied */
+
+/* (jab bhi direct child element ko target krna ho to " div>p " ye syntax use krte h.) */
+     /* div > p{
+
+        color: orange;
+        background-color: aqua;
+        font-weight: bolder;
+    } */
+
+/* if p is right after div i.e p is the next sibling of div */
+
+/* (kai bar situation ho skte h jismeh <p> ko select krna ho aise case meh ye selctor use krte h  " div+p ".) */
+    /* div + p{
+
+        color: white;
+        background-color: red;
+    } */
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>This will not get affected</li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- (nth child pseudo selctor & attributes) -->
+
+<!-- (pseudo selctor ki help se different attributes ki properties ko target kr skte h.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 23px;
+            border: 2px solid orchid;
+        }
+        a[target='_self']{
+            font-size: 44px;
+            color: peru;
+        }
+/* (same way ager "email tab" ko taget krna ho to ye below code likhte h.) */
+        input[type='email']{
+            color: yellow;
+            border: 4px solid black;
+        }
+
+/* This will apply css for third child  */
+   /* (below code text color ko convert kr dega to cyan of third only.) */
+        /* li:nth-child(3){
+            color: orange;
+        }
+
+        li:nth-child(2n+0){
+            color: red;
+        } */
+
+/* (ager text color red change krna h every third element of list ka to below code use krenge. ye work rkta h basic formula per jaha per ye convert kr dega all items ko depanding on values of n starting from 0.)  */        li:nth-child(3n+3){
+            color: orange;
+        }
+
+        /* odd child */
+/* (list meh all odd element select kr skte h using below code.) */
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+
+        /* even child */
+/* (list meh all even element select kr skte h using below code.) */
+        li:nth-child(even){
+            background-color: teal;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://twitter.com" target="_self">Go to Twitter</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="Password" placeholder="Enter your Password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+    </div>
+</body>
+</html>          
